@@ -24,6 +24,9 @@
     </div>
     <div class="container border bg-success" style="padding-top: 10px; color:violet;">
         <p id="help">Help report.</p>
+    <div class="container text-left">
+        <button class="btn btn-success" type="submit" onclick="resetGame()">reset</button>
+    </div>
     </div>
     <br>
 </div>
@@ -133,7 +136,7 @@
     let chestCount = 0
     let score = 0
     let lastCheck = 12
-    let treasureLocation = 18
+    let treasureLocation = 
   
     function check(position) {
         image = document.getElementById(ids[position])
@@ -178,7 +181,7 @@
     }
     // BONUS
   function resetGame() {
-      treasureLocation = Math.floor(Math.random() * 24)
+      treasureLocation =Math.floor(Math.random() * 24)
       while(treasureLocation == 12) {
           treasureLocation = Math.floor(Math.random() * 24)
       }
